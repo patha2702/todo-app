@@ -1,0 +1,42 @@
+.container, .create-container, .todos-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.create-container, .todos-container {
+    background-color: blueviolet;
+}
+
+.input-field {
+    padding: 0.5em 1em;
+    line-height: 1.5;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    background-color: rgb(15, 231, 15);
+    color: rgb(21, 70, 70);
+    font-weight: bold;
+}
+
+.label {
+    font-weight: 600px;
+    color: yellowgreen;
+}
+
+.input-container * {
+    display: inline-block;
+    width: 70%;
+}
+.input-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}

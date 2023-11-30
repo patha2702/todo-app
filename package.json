@@ -1,0 +1,27 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "A todo app which provides the basic functionalities like add, updata, read and delete todos",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patha2702/todo-app.git"
+  },
+  "author": "Rajendra Patha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patha2702/todo-app/issues"
+  },
+  "homepage": "https://github.com/patha2702/todo-app#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
