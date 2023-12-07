@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoLAMA</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Todo app</title>
 </head>
 <body>
-    <div class="container">
-        <div class="create-container">
-            <h1>TODO LAMA</h1>
-            <div class="input-container">
-                <label for="title" class="label">Title</label>
-                <input type="text" id="title" class="input-field">
+
+    <main class="app-container">
+        <h1>TodoLAMA</h1>
+        <div class="input-container">
+            <div>
+                <input type="text" placeholder="Add new Title" class="input-field" id="title">
+                <input type="text" placeholder="Add new Description" class="input-field" id="description">
             </div>
-            <div class="input-container">
-                <label for="description" class="label">Description</label>
-                <input type="text" id="description" class="input-field">
+            <button class="btn" id="addBtn" onclick="handleAddTodo()">Add</button>
+        </div>
+        <div class="lists-container">
+            <div class="todo">
+                <input type="checkbox" class="checkbox">
+                <p>Buy groceries for next week</p>
             </div>
-            
-            <button class="btn" id="create-todo-btn">CREATE MY TODO</button>
+            <div class="todo">
+                <input type="checkbox" class="checkbox">
+                <p>Buy groceries for next week</p>
+            </div>
+            <div class="todo">
+                <input type="checkbox" class="checkbox">
+                <p>Buy groceries for next week</p>
+            </div>
         </div>
-        <div class="todos-container">
-            
-        </div>
-        
-    </div>
+    </main>
+
     <script src="./index.js"></script>
 </body>
 </html>

@@ -1,42 +1,92 @@
-.container, .create-container, .todos-container {
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.app-container {
     width: 80%;
-    margin: 0 auto;
-    background-color: aqua;
+    margin: 2em auto;
+    padding: 2em;
+    border: 2px solid rgb(190, 186, 186);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     gap: 1em;
 }
 
-.create-container, .todos-container {
-    background-color: blueviolet;
-}
-
 .input-field {
-    padding: 0.5em 1em;
-    line-height: 1.5;
-}
-
-.btn{
-    display: inline-block;
-    padding: 0.5em 1em;
-    border-radius: 25px;
-    background-color: rgb(15, 231, 15);
-    color: rgb(21, 70, 70);
-    font-weight: bold;
-}
-
-.label {
-    font-weight: 600px;
-    color: yellowgreen;
-}
-
-.input-container * {
     display: inline-block;
     width: 70%;
+    height: 4vh;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
 }
-.input-container {
+
+.lists-container {
+    padding: 1em;
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    border-top: 2px solid rgb(190, 186, 186);
+}
+
+.todo {
+    margin-left: 4em;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.checkbox{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5em 1em;
+    color: white;
+    background-color: rgb(27, 138, 182);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(7, 99, 136);
+}
+/* Typography */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(27, 138, 182);
+}
+
+.btn {
+    font-weight: bold;
+
+}
+
+p{
+    font-size: 1.25rem;
 }
